@@ -1,0 +1,25 @@
+.paint {
+  padding: 10px;
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.paint__left {
+  width: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.paint__left img {
+  width: 100%;
+}
+.paint__right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.paint__right h2 {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=painting.css.map */

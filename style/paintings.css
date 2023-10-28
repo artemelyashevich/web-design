@@ -1,0 +1,41 @@
+.paints {
+  width: 100%;
+  grid-area: cards;
+  display: grid;
+  grid-template: auto/1fr 1fr;
+  grid-gap: 15px;
+  margin: 2% 0;
+  margin-right: 10px;
+}
+
+.paint {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px;
+}
+.paint__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.paint__left img {
+  width: 100%;
+}
+.paint__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.paint__right h2 {
+  margin-bottom: 15px;
+}
+.paint__right-description {
+  width: 10%;
+  height: auto;
+}/*# sourceMappingURL=paintings.css.map */
