@@ -2,8 +2,6 @@ const defaultPaints = await fetch('../js/db.json').then(res => res.json())
 
 const id = localStorage.getItem('id')
 
-console.log(id);
-
 const painting = defaultPaints.find(item => item.id === parseInt(id))
 
 document.title = painting.title
