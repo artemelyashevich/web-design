@@ -16,4 +16,10 @@ footer {
   width: 96%;
   margin-left: 2%;
   border-top: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
 }/*# sourceMappingURL=layout.css.map */
+
+footer p {
+  font-size: 12px;
+}
