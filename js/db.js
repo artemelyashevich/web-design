@@ -1,4 +1,4 @@
-/*const defaultPaints = [
+const defaultPaints = [
     {
         "id": 1,
         "title": "День рождения",
@@ -42,11 +42,10 @@
         "imagePath": "./assets/nad_gorodom.jpg"
     }
 ]
-*/
 
 const paints = document.querySelector(".paints")
 
-getAllPaintings().forEach(paint => {
+defaultPaints.forEach(paint => {
     paints.innerHTML +=
         `
     <div class="paint" data-id="${paint.id}">
@@ -69,10 +68,6 @@ getAllPaintings().forEach(paint => {
     `
 })
 
-const paint = document.querySelectorAll(".paint")
-
-paint.forEach(item => {
-    item.addEventListener("click", () => {
-        localStorage.setItem("id", item.dataset.id)
-    })
-})
+const getAllPaintings = () => {
+    return defaultPaints
+}

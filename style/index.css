@@ -11,7 +11,8 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: math;
 }
 
 h2 {
@@ -27,13 +28,11 @@ p {
 a {
   text-decoration: none;
   color: #000000;
-  z-index: 2;
-}
+ }
 
 .container {
-  z-index: 1;
   padding: 10px;
   display: flex;
   margin: 0 auto;
   max-width: 1480px;
-}/*# sourceMappingURL=index.css.map */
+}
