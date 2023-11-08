@@ -39,4 +39,3 @@ document.querySelector(".paint").innerHTML =
         <p>${painting.description}</p>
     </div>
 `
-
