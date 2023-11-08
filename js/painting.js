@@ -1,8 +1,31 @@
-const defaultPaints = await fetch('../js/db.json').then(res => res.json())
-
 const id = localStorage.getItem('id')
 
-const painting = defaultPaints.find(item => item.id === parseInt(id))
+let painting = defaultPaints.find(item => item.id === parseInt(id))
+
+const forwardArrow = document.querySelector(".forward")
+
+const backArrow = document.querySelector(".back")
+
+if (id > 1) {
+    backArrow.innerHTML = `
+    <img src="../assets/reshot-icon-arrow-left-4NA6KJF8CU.svg" alt="" srcset="">
+    `
+}
+if (id != defaultPaints.length) {
+    forwardArrow.innerHTML = `
+        <img src="../assets/reshot-icon-arrow-right-ZP2WDL9B8N.svg" alt="" srcset="">
+    `
+}
+
+backArrow.addEventListener("click", () => {
+    localStorage.setItem("id", +id - 1)
+    location.reload()
+})
+
+forwardArrow.addEventListener("click", () => {
+    localStorage.setItem("id", +id + 1)
+    location.reload()
+})
 
 document.title = painting.title
 

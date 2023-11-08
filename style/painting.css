@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
 .paint {
   padding: 10px;
   display: flex;
@@ -22,4 +29,12 @@
 }
 .paint__right h2 {
   margin-bottom: 30px;
+}
+
+.forward img, .back img {
+  cursor: pointer;
+  width: 75px;
+}
+.forward img:active, .back img:active {
+  transform: translateY(-2px);
 }/*# sourceMappingURL=painting.css.map */

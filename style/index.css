@@ -7,21 +7,24 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
+  color: #fff;
 }
 
 h1 {
-  color: #fff;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 h2 {
-  color: #fff;
   font-size: 26px;
+}
+
+span {
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 p {
   font-size: 16px;
-  color: #fff;
 }
 
 a {
@@ -35,5 +38,6 @@ a {
   padding: 10px;
   display: flex;
   margin: 0 auto;
-  max-width: 1480px;
+  margin-left: 5%;
+  width: 90%;
 }/*# sourceMappingURL=index.css.map */

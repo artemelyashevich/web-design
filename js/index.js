@@ -1,5 +1,3 @@
-const defaultPaints = await fetch('js/db.json').then(res => res.json())
-
 const paints = document.querySelector(".paints")
 
 defaultPaints.forEach(paint => {
