@@ -18,14 +18,11 @@ defaultPaints.forEach(paint => {
         <p class=""paint__right-description> ${paint.shortDescription} </p>
         </a> 
     </div>
-   
-</div>
+   </div>
     `
 })
 
-const paint = document.querySelectorAll(".paint")
-
-paint.forEach(item => {
+document.querySelectorAll(".paint").forEach(item => {
     item.addEventListener("click", () => {
         localStorage.setItem("id", item.dataset.id)
     })
