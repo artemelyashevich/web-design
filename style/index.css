@@ -41,3 +41,86 @@ a {
   margin-left: 5%;
   width: 90%;
 }
+
+
+@media(max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+
+  .paints {
+    display: grid !important;
+   grid-template: auto / 1fr !important;
+  }
+
+  .painting__right {
+    width: 250px;
+  }
+
+  .painting__left {
+    width: 250px;
+  }
+
+  .painting h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .paint p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .paints {
+    display: grid !important;
+   grid-template: auto / 1fr !important;
+  }
+
+  .paint h2 {
+    font-size: 15px;
+  }
+
+  .paint p {
+    font-size: 13px;
+  }
+
+  .painting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 440px;
+  }
+
+  .paints {
+    display: grid !important;
+   grid-template: auto / 1fr !important;
+  }
+
+  .paint h2 {
+    font-size: 13px;
+  }
+
+  .paint p {
+    font-size: 10px;
+  }
+}
