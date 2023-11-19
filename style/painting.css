@@ -5,7 +5,7 @@
   column-gap: 20px;
 }
 
-.paint {
+.painting {
   padding: 10px;
   display: flex;
   -moz-column-gap: 50px;
@@ -14,26 +14,26 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.paint__left {
+.painting__left {
   width: 200%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.paint__left img {
+.painting__left img {
   width: 100%;
 }
-.paint__right {
+.painting__right {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
 }
-.paint__right h2 {
+.painting__right h2 {
   margin-bottom: 30px;
 }
 
 .forward img, .back img {
   cursor: pointer;
-  width: 75px;
+  width: 50px;
   user-select: none;
 }
 .forward img:active, .back img:active {
