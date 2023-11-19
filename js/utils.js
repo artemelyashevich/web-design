@@ -10,12 +10,12 @@ const findPainting = (id) => {
 }
 
 const showPainting = (painting) => {
-    document.querySelector(".paint").innerHTML =
+    document.querySelector(".painting").innerHTML =
         `
-    <div class="paint__left">
+    <div class="painting__left">
         <img src=".${painting.imagePath}" alt="image Shagal"/>
     </div>
-    <div class="paint__right">
+    <div class="painting__right">
         <h2>${painting.title}</h2>
         <p>${painting.description}</p>
     </div>
@@ -24,12 +24,10 @@ const showPainting = (painting) => {
 
 const showArrows = (id) => {
     if (id > 1) {
-        console.log("+");
         backArrow.innerHTML = `
-        <img src="../assets/reshot-icon-arrow-left-4NA6KJF8CU.svg" alt="" srcset="">
+        <img src="../assets/reshot-icon-arrow-left-4NA6KJF8CU - Copy.svg" alt="" srcset="">
         `
     } else {
-        console.log("-");
         backArrow.innerHTML = ``
     }
     if (id != defaultPaints.length) {
